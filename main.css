@@ -1,0 +1,16 @@
+@import url("//cdn.jsdelivr.net/gh/sweetwisdom/cdn@master/recet.css");
+
+.header {
+  height: 120px;
+  width: 100%;
+  background-color: #037ef3;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  line-height: 120px;
+}
+.editor {
+  width: 80%;
+  margin: 50px auto;
+  min-height: 620px;
+}

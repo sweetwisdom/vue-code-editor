@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="googlebot" content="noindex, nofollow" />
+    <meta id="viewport" name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <title>vue-codemirror-editor - JSRUN 驱动</title>
+
+    <script type="text/javascript" src=""></script>
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/codemirror@5.65.2/theme/cobalt.css" />
+    <link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/codemirror/5.26.0/codemirror.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/codemirror@5.65.2/addon/lint/lint.css">
+    <link rel="stylesheet" type="text/css" href="main.css" />
+
+    <script type="text/javascript" src="http://cdn.bootcss.com/codemirror/5.26.0/codemirror.min.js"></script>
+    <script type="text/javascript" src="http://cdn.bootcss.com/vue/2.2.1/vue.js"></script>
+    <script type="text/javascript"
+        src="http://cdn.jsdelivr.net/npm/vue-codemirror@4.0.6/dist/vue-codemirror.min.js"></script>
+
+    <!-- <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/codemirror@5.65.2/addon/format/format.js"></script> -->
+    <script type="text/javascript"
+        src="http://cdn.jsdelivr.net/npm/codemirror@5.65.2/mode/javascript/javascript.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/codemirror@5.65.2/addon/lint/lint.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsonlint@1.6.3/lib/jsonlint.min.js"></script>
+    <script type="text/javascript"
+        src=" https://cdn.jsdelivr.net/npm/codemirror@5.65.2/addon/lint/json-lint.js"></script>
+
+
+
+</head>
+
+<body>
+    <div id="app">
+        <div class="header">
+            vue-codemirror-editor
+
+        </div>
+        <div>
+            <!-- https://www.cnblogs.com/Angies/p/7830948.html -->
+            <p class="text-white text-center mb-2">
+                <a href="https://github.com/surmon-china/vue-codemirror">
+                    VUE 实现在线 代码 编辑器</a>
+            </p>
+
+            <div class="p-2   editor">
+
+                <codemirror ref="codeEdit" style="height: 500px;" v-model="code" @input="onCmCodeChange"
+                    :options="cmOptions">
+                </codemirror>
+            </div>
+
+
+        </div>
+    </div>
+    <script type="application/javascript" src="main.js"></script>
+</body>
+
+</html>
