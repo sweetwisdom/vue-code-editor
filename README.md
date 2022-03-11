@@ -3,6 +3,7 @@
 > 基于：codemirror
 >
 > 参考：[CodeMirror](https://codemirror.net/)
+> [demo](https://sweetwisdom.github.io/vue-code-editor/)
 
 ## json
 
